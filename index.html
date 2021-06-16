@@ -14,7 +14,7 @@
     }
 
     body {
-        background-color: #111;
+        background-color: #222;
     }
 
     .max-width {
@@ -63,6 +63,21 @@
     .bg-red {
         background-color: #d1a1a1;
     }
+    .teclado{
+        border-top: 2px solid #222;
+        box-shadow: 0 0 5px #FFF;
+        background-color: #fff;
+        max-width: 500px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+
+    }
+    .teclado > button{
+        width: 100px;
+        height: 100px;
+    }
 </style>
 
 <body>
@@ -70,7 +85,21 @@
         <button onclick="start();" class="bg-green">Iniciar</button>
         <button onclick="pause();" class="bg-yellow">Pausar</button>
         <button onclick="stop();" class="bg-red">Parar</button>
-        <h1 id="counter">00:00:00</h1>
+        <h1 id="counter">00:00</h1>
+    </div>
+    
+    <div class="teclado">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="0">0</button>
+        <button class="m30" value="30" onclick="m30(value)">+30</button>
     </div>
 </body>
 <script src="cron.js"></script>
